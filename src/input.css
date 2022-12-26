@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Proxima Nova, system-ui, sans-serif;
+    }
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/ProximaNova.otf");
+}
+
+.child {
+    pointer-events: auto;
+}
+
+a[role="tab"] {
+    color: theme('colors.primary');
+    padding: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    pointer-events: auto;
+}
+
+a[role="tab"].active {
+    background-color: theme('colors.primary');
+    border: 1px solid theme('colors.primary');
+    color: white;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+[x-cloak] {
+    display: none !important;
+}
