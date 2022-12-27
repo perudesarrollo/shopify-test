@@ -98,6 +98,7 @@
     {%- endif -%}
 
     {% section 'announcement-bar' %}
+    {% section 'announcement' %}
     {% section 'header' %}
     <main
       id="MainContent"
@@ -146,7 +147,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {

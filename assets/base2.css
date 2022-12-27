@@ -742,10 +742,6 @@ html {
   max-width: 1320px;
 }
 
-.flex-none {
-  flex: none;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -762,10 +758,6 @@ html {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-center {
